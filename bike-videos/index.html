@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="row">
+  {% for bike in site.bikes %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <a href="/bikes/{{ bike.name }}">
+        {% img '{{ bike.image }}' class:'img-thumbnail' %}
+      </a>
+      <div class="caption">
+        <h3>{{ bike.title }}</h3>
+        <p>{{ bike.description }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

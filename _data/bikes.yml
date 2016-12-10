@@ -1,0 +1,15 @@
+- name: CVP
+  image: CVP.jpg
+  video: /videos/CVP.mp4
+  title: A CVP
+  description: Some sort of transmission.
+
+- name: Old Big Wheel
+  image: old.jpg
+  title: Old Big Wheel Bike
+  description: Ye Olde Bike
+
+- name: Young Big Wheel
+  image: young.jpg
+  title: Baby Big Wheel Bike
+  description: Bike for youngsters
