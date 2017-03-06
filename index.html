@@ -4,4 +4,20 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-Content Thingies
+{% assign chunked_bikes = site.data.bikes | group_by:"row" %}
+
+{% for row in chunked_bikes %}
+  <div class="card-deck">
+    {% for bike in row.items %}
+      <div class="card mb-3">
+        <a href="{{ bike.video }}" data-lity>
+          {% img '{{ bike.image }}' class:'card-img-top img-fluid' %}
+          <div class="card-block">
+            <h4 class="card-title">{{ bike.title }}</h4>
+            <p class="card-text">{{ bike.description }}</p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
