@@ -1,6 +1,9 @@
 clean:
 	rm -rf .asset-cache _site
 
-dist: clean
+deps:
+	bundle install
 	yarn install
+
+dist: clean
 	JEKYLL_ENV=production bin/jekyll build
