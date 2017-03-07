@@ -9,7 +9,8 @@
   $('.video-link').on('click', function (evt) {
     evt.preventDefault()
     var link = $(evt.currentTarget)
-    lightbox = lity(lightboxContent(link.attr('href')))
+    var content = lightboxContent(link.attr('href'))
+    lightbox = lity(content)
     return false
   })
 
