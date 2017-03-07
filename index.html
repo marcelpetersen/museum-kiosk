@@ -9,11 +9,11 @@ layout: default
 {% for row in chunked_bikes %}
   <div class="card-deck">
     {% for bike in row.items %}
-      <div class="card mb-3">
-        <a href="{{ bike.video }}" data-lity>
+      <div class="card bike-card mb-3">
+        <a href="{{ bike.video }}" class="video-link">
           {% img '{{ bike.image }}' class:'card-img-top img-fluid' %}
           <div class="card-block text-sm-center">
-            <h4 class="card-title">{{ bike.title }}</h4>
+            <h4 class="card-title">{{ bike.name }}</h4>
             <p class="card-text">{{ bike.description }}</p>
           </div>
         </a>
