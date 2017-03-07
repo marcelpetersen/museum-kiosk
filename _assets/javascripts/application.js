@@ -14,7 +14,6 @@
   })
 
   window.handleEnded = function () {
-    console.log('video ended!')
     lightbox.close()
   }
 })(jQuery)
