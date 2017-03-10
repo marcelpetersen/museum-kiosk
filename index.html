@@ -10,8 +10,8 @@ layout: default
   <div class="card-deck">
     {% for bike in row.items %}
       <div class="card bike-card mb-3">
-        <a href="{{ bike.video }}" class="video-link">
-          {% img '{{ bike.image }}' class:'card-img-top img-fluid' %}
+        <a href=".{{ bike.video }}" class="video-link">
+          <img class="card-img-top img-fluid" src=".{{ bike.image | asset_path }}" />
           <div class="card-block text-sm-center">
             <h4 class="card-title">{{ bike.name }}</h4>
             <p class="card-text">{{ bike.description }}</p>

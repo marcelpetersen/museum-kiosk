@@ -6,7 +6,6 @@ Jekyll site
 
  - Ruby with Bundler
  - Node.js with Yarn
- - GNU Make
 
 # Getting started
 

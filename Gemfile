@@ -14,11 +14,9 @@ gem 'uglifier', '~> 3.0.3'
 
 group :jekyll_plugins do
   gem 'jekyll-assets', '~> 2.2.8'
-  gem 'jekyll-feed', '~> 0.9.1'
   gem 'jekyll-google-tag-manager', '~> 1.0.1'
   gem 'jekyll-redirect-from', '~> 0.12.1'
   gem 'jekyll-seo-tag', '~> 2.1.0'
-  gem 'jekyll-sitemap', '~> 1.0.0'
   gem 'jekyll_version_plugin', '~> 2.0.0'
 end
 

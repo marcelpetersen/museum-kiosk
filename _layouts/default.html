@@ -12,7 +12,7 @@
             {{ content }}
         </div>
 
-        {% javascript vendor %}
-        {% javascript application %}
+        <script type="text/javascript" src=".{{ 'vendor.js' | asset_path }}"></script>
+        <script type="text/javascript" src=".{{ 'application.js' | asset_path }}"></script>
     </body>
 </html>
