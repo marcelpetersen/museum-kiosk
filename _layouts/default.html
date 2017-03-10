@@ -1,19 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en_US">
     <head>
         {% include head.html %}
     </head>
     <body>
-        <!--[if lte IE 9]>
+        <!--[if IE]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-      <div class="container">
-        {{ content }}
-      </div>
+        <div class="container">
+            {{ content }}
+        </div>
 
-
-        <!-- Scripts go here -->
+        <script type="text/javascript" src=".{{ 'vendor.js' | asset_path }}"></script>
+        <script type="text/javascript" src=".{{ 'application.js' | asset_path }}"></script>
     </body>
 </html>

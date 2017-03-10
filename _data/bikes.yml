@@ -1,15 +1,23 @@
-- name: CVP
-  image: CVP.jpg
-  video: /videos/CVP.mp4
-  title: A CVP
+- name: The Highwheel
+  image: highwheel.jpg
+  video: /videos/highwheel.mp4
   description: Some sort of transmission.
+  row: 1
 
-- name: Old Big Wheel
-  image: old.jpg
-  title: Old Big Wheel Bike
+- name: Brakes
+  image: brakes.jpg
   description: Ye Olde Bike
+  video: /videos/brakes.mp4
+  row: 1
 
-- name: Young Big Wheel
-  image: young.jpg
-  title: Baby Big Wheel Bike
+- name: Gears
+  image: gears.jpg
   description: Bike for youngsters
+  video: /videos/gears.mp4
+  row: 2
+
+- name: Helmets
+  image: helmets.jpg
+  description: quux
+  video: /videos/helmets.mp4
+  row: 2

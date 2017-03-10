@@ -1,14 +1,23 @@
-@import 'vendor/bootstrap';
+@import 'bootstrap/scss/bootstrap';
+@import 'lity';
 
-.fit-video-to-screen {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+body {
+  background-color: #f5f8fa;
 }
 
-.black-background {
-  background-color: black;
+.bike-card {
+  .card-title, .card-text {
+    color: $black;
+  }
+}
+
+.lity-content {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.padme {
+  padding-top: 5em;
 }

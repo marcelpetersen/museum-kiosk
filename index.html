@@ -4,4 +4,18 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-Content Thingies
+{% assign chunked_bikes = site.data.bikes | group_by:"row" %}
+
+<div class="padme">
+{% for row in chunked_bikes %}
+  <div class="card-deck">
+    {% for bike in row.items %}
+      <div class="card bike-card mb-3">
+        <a href=".{{ bike.video }}" class="video-link">
+          <img class="card-img-top img-fluid" src=".{{ bike.image | asset_path }}" />
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
