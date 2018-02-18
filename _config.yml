@@ -3,7 +3,7 @@ title: Bike Videos
 description: >
   These are some awesome educational videos about the history of the bicycle.
 url: ""
-baseurl: ""
+baseurl: "museum-kiosk/"
 
 # Build settings
 markdown: kramdown
